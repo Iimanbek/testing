@@ -101,6 +101,17 @@
         "em",
         "Все перечисленные существуют"
       ]
+    },
+    {
+      "id": 11,
+      "question": "Как расщифровается CSS?",
+      "variants": [
+        "rem",
+        "px",
+        "cm",
+        "Сascading stylesheet Style",
+        "Все перечисленные существуют"
+      ]
     }
   ],
   "answers": [
@@ -143,6 +154,10 @@
     {
       "id": 10,
       "answer": "Все перечисленные существуют"
+    },
+    {
+      "id": 11,
+      "answer": "Сascading stylesheet Style"
     }
   ]
 }
