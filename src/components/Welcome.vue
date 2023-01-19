@@ -91,6 +91,18 @@ export default {
 </script>
 
 <style lang="scss">
+@media screen and (max-width: 505px) {
+  .v-form{
+  width: 300px !important;
+  padding: 30px 10px !important;
+  border-radius: 8px !important;
+  }  
+  .v-btn{
+    width: 20% !important;
+    font-size: 8px !important;
+    height: 32px !important;
+  }
+}
 .v-form{
   background: white;
   width: 500px;

@@ -33,9 +33,17 @@ export default {
         getProcent(){
             this.procent = this.valueStore.ANSWERS / this.valueStore.dataQst.length * 100
         },
-        async returnnn(){
-            await this.$router.replace({ path: '/'})
+        returnnn(){
+            this.$router.push("/").then(() => {
+            console.log('Updated route', this.$route)
+            })
+            this.valueStore.personInfo.name = ''
+            this.valueStore.personInfo.email = ''
+            this.valueStore.personInfo.gender = ''
         }
+    },
+    updated() {
+        // this.returnnn()
     },
     mounted() {
         this.getProcent()
@@ -46,6 +54,28 @@ export default {
 }
 </script>
 <style lang="scss">
+@media screen and (max-width: 350px) {
+    .result_wrapper{
+        background: white;
+        width: 200px;
+        padding: 50px 30px;
+        border-radius: 10px;      
+    }
+    .naaaaa{
+    font-weight: 500;
+    }
+}
+// @media screen and (max-width: 350px) {
+//     .result_wrapper{
+//         background: white;
+//         width: 300px;
+//         padding: 50px 30px;
+//         border-radius: 10px;      
+//     }
+//     .naaaaa{
+//     font-weight: 500;
+//     }
+// }
 .result_wrapper{
 //   width: 50%;
   background: white;
