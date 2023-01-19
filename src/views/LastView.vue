@@ -38,7 +38,7 @@ export default {
         }
     },
     mounted() {
-        // console.log(this.valueStore.dataQst.length);    
+
         this.getProcent()
     },
     computed:{
