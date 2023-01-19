@@ -11,10 +11,10 @@
                 </div>
                 <div>
                     <p>Верных ответов:</p>
-                    <h1 class="name">{{ valueStore.ANSWERS }} / {{ procent }}%</h1>
+                    <h1 class="name naaaaa">{{ valueStore.ANSWERS }} / {{ procent }}%</h1>
                 </div>
                 <div class="btn-wrap">
-                    <v-btn @click="returnnn">RETURN</v-btn>
+                    <v-btn class="btbtbtb" color="#0066ff" @click="returnnn">RETURN</v-btn>
                 </div>
             </div>
         </div>
@@ -77,5 +77,13 @@ a{
     margin-top: 30px;
     display: flex;
     justify-content: center;
+}
+.naaaaa{
+    color: #0066ff;
+    font-weight: 800;
+}
+.btbtbtb{
+    color: white;
+    font-weight: 500;
 }
 </style>
