@@ -27,7 +27,7 @@
       "variants": [
         "visibility",
         "display",
-        ":focus",
+        "hidden",
         "none"
       ]
     },
@@ -114,7 +114,7 @@
     },
     {
       "id": 3,
-      "answer": ":focus"
+      "answer": "visibility"
     },
     {
       "id": 4,

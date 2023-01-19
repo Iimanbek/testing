@@ -43,6 +43,7 @@ export default {
       this.qstAnswers = await res_ANS.json()
     },
     async routerControl(){
+      
       if (this.valueStore.valueRadio){
         const idd =this.$route.params.id
         this.$router.replace({ path: `/about/${+idd + 1}`})
@@ -54,19 +55,15 @@ export default {
           console.log('correct',this.valueStore.ANSWERS)
         }
       }
-
-
+      this.valueStore.valueRadio = ''
     }
   },
   mounted() {
     // this.getData()
     this.valueStore.getQST()
-    
   },
   updated() {
-    // this.getData()
     console.log('skdjnsd');
-
   },
   watch: { 
   '$route.params.id': {
