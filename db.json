@@ -27,7 +27,7 @@
       "variants": [
         "visibility",
         "display",
-        "hide",
+        ":focus",
         "none"
       ]
     },

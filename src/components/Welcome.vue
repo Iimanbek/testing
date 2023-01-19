@@ -5,7 +5,7 @@
     lazy-validation>
     <v-text-field
       v-model="valueStore.personInfo.name"
-      :counter="10"
+      :counter="20"
       :rules="nameRules"
       label="Firstname and Lastname"
       required></v-text-field>
@@ -17,7 +17,7 @@
     ></v-text-field>
 
     <v-select
-      v-model="select"
+      v-model="valueStore.personInfo.gender"
       :items="items"
       :rules="[v => !!v || 'Item is required']"
       label="Gender"
@@ -52,14 +52,14 @@
 
 
 <script> 
-import { mapStores } from 'Pinia'
+import { mapStores } from 'pinia'
 import { useValueStore } from '../stores/getvalue.js'
 export default {
   data: () => ({
     valid: true,
     nameRules: [
       v => !!v || 'Name is required',
-      v => (v && v.length <= 10) || 'Name must be less than 10 characters',
+      v => (v && v.length <= 20) || 'Name must be less than 10 characters',
     ],
     emailRules: [
       v => !!v || 'E-mail is required',
@@ -96,5 +96,20 @@ export default {
   width: 500px;
   padding: 50px 30px;
   border-radius: 10px;
+}
+.v-selection-control__input {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.v-selection-control__input input{
+  opacity: 1 !important; 
+  width: 50% !important;
+  margin-left: 10px ;
+}
+.v-selection-control__wrapper{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 </style>
